@@ -50,6 +50,10 @@ sudo make run-all
 claude mcp add jenner-mcp --transport http "http://localhost:9765/mcp"
 claude mcp add jenner-measles-mcp --transport http "http://localhost:9766/mcp"
 ```
+and stop them
+```
+sudo make stop-all          # stop and remove all containers
+```
 
 ## Links
 - [laser-mcp](https://github.com/InstituteforDiseaseModeling/laser-mcp/blob/main/README.md)
