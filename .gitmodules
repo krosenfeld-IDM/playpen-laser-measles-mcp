@@ -3,4 +3,4 @@
 	url = git@github.com:InstituteforDiseaseModeling/laser-measles.git
 [submodule "src/laser-mcp"]
 	path = src/laser-mcp
-	url = git@github.com:InstituteforDiseaseModeling/laser-mcp.git
+	url = git@github.com:krosenfeld-IDM/laser-mcp.git
