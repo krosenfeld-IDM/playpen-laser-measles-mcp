@@ -1,0 +1,17 @@
+[project]
+name = "playpen-laser-measles-mcp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Katherine Rosenfeld", email = "krosenf@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+playpen-laser-measles-mcp = "playpen_laser_measles_mcp:main"
+
+[build-system]
+requires = ["uv_build>=0.9.24,<0.10.0"]
+build-backend = "uv_build"
