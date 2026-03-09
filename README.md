@@ -29,6 +29,28 @@ git submodule update --remote src/laser-measles
 git submodule update --remote src/laser-mcp
 ```
 
+### Setup virtual environment
+```
+uv sync
+uv pip install -e .
+cd src/laser-mcp
+uv pip install -r requirements.txt
+```
+### Setup laser-measles mcp
+```
+cd src/laser-mcp
+make ingest-all        # build both vectorstores
+```
+
+## Use the MCP (from linux box)
+```
+sudo systemctl start docker
+cd src/laser-mcp
+sudo make run-all
+claude mcp add jenner-mcp --transport http "http://localhost:9765/mcp"
+claude mcp add jenner-measles-mcp --transport http "http://localhost:9766/mcp"
+```
+
 ## Links
 - [laser-mcp](https://github.com/InstituteforDiseaseModeling/laser-mcp/blob/main/README.md)
 - [laser-measles-wiki](https://github.com/InstituteforDiseaseModeling/laser-measles/wiki)
